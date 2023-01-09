@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center"> Sportswear Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the product
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your employment status?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="Self-employed">Self-employed</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Would you recommend our product to a friend?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which of the followings would describe your purpose to buy sportswear?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Gym/fitness">Gym/fitness</option>
+        <option value="Running">Running</option>
+        <option value="Hiking">Hiking</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which of the followings would influence your decision to buy a our brand product?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="Price"
+          type="checkbox"
+          class="input-checkbox"
+        />Price</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="Quality"
+          type="checkbox"
+          class="input-checkbox"
+        />Quality</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Value"
+          type="checkbox"
+          class="input-checkbox"
+        />Value</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="Brand"
+          type="checkbox"
+          class="input-checkbox"
+        />Brand</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Other</label
+      >
+      
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
